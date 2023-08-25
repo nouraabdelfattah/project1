@@ -1,0 +1,780 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(44, 15, 1); 
+    position: fixed;
+    top: 0;
+    overflow: auto;
+    z-index: 1;
+    color: white;
+    font-family:serif;
+    
+ 
+}
+.logo-title{
+    float: left;
+    margin:20px 0 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 12px;
+   
+
+}
+.logo-img{
+    display: inline;
+    width: 40px;
+    height: 30px;
+    float: left;
+    margin: 9px 0 0 40px;
+}
+.contacts-list{
+    list-style: none;
+    float: right;
+    margin:17px  80px 0 0;
+    
+}
+.contacts-list li{
+    display: inline;
+    margin-left: 12px;
+    position: relative;
+}
+.contacts-list a{
+    text-decoration: none;
+color:white;
+
+}
+
+ .contacts-list .li-li:after{
+   position: absolute;
+    width: 0;
+    height: 2px;
+    content: "";
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    background-color: white;
+    visibility: hidden;
+    border-radius: 2px;
+} 
+.contacts-list .li-li:hover::after{
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+} 
+.li-home:after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:white;
+   border-radius: 2px;
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+}
+.home{
+    background-image: url(../img/abundant-collection-antique-books-wooden-shelves-generated-by-ai.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+.home .overlay , .section1-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color:rgba(13, 13, 14,0.6);
+
+}
+.home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.home-title{
+    font-size: 50px;
+}
+.home-paragraph{
+    font-size: 24px;
+}
+.home-content .btn{
+    width: 80px;
+padding: 8px ;
+border-radius: 3px;
+border: 0;
+margin: 7px 9px 0 7px;
+background-color: rgb(44, 15, 1);
+color: rgb(44, 15, 1);
+}
+.home-content  .btn1{
+    background-color: white;
+
+}
+.home-content .btn2{
+    color: white;
+}
+.home-content .btn:hover{
+    opacity: 0.6;
+    cursor: pointer;
+
+}
+.section1 , .section3-parent{
+    width: 80%;
+    
+    margin-left: 10%;
+    text-align: center;
+    margin-bottom: 180px;
+    color:   rgb(44, 15, 1);
+    overflow: hidden;
+    
+}
+.section1-title{
+    margin-top: 120px;
+    color: rgb(44, 15, 1);
+}
+.section1-line,.section2-line{
+    width: 50px;
+    height: 2px;
+    background-color: rgb(44, 15, 1);
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+.section1-parent{
+    
+    margin: auto;
+}
+.section1-content , .section3-content{
+    border: 1px solid  rgb(44, 15, 1);
+    border-radius: 10px;
+    width: 30%;
+    height: 200px;
+    float: left;
+    text-align: center;
+    padding: 10px;
+position: relative;
+    
+}
+.section1-overlay{
+    border-radius: 10px;
+}
+
+.section1 .div2{
+    margin:0  5%;
+    background-image: url(../img/What\ is\ the\ importance\ of\ Arabic\ language\ in\ Islamic\ education\ system_.jpg);
+    background-size: cover;
+color: white;
+}
+.section1 .div1,.section1 .div3{
+    background-size: cover;
+    color: white;
+}
+.section1 .div1{
+    background-image:url(../img/stack-old-textbooks-library-shelf-generated-by-ai.jpg) ;
+}
+.section1 .div3{
+    background-image: url(../img/antique-book-collection-old-bookshelf-generated-by-ai.jpg);
+}
+
+.section1 h3{
+    margin: 20px 0 30px 0;
+    font-size: 25px;
+    
+}
+
+.section1 a{
+    display: block;
+font-weight: bold;
+text-decoration: underline;
+margin-top: 25px;
+color: wheat;
+}
+.section1 a:hover{
+    
+    
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+/* section2 */
+
+.section2-imgs{
+width: 80%;
+margin-left: 10%;
+
+}
+ .section2-img{   
+    width: 100%;
+    height: 100%;
+  
+}
+.section2-imgs .img1{         
+    width: 30%;
+    height: 45%;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    
+    position: relative;
+}
+.section2-title{
+    text-align: center;
+    color:  rgb(44, 15, 1);
+    
+    
+}
+.section2-overlay{
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(0, 0, 0, 0.8) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+.section2-overlay-content{
+    position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+overflow: auto;
+text-align: center;
+
+}
+.section2-overlay-content h4,p{
+    margin-bottom: 10px;
+    color: white;
+}
+.section2-overlay-content a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color:  rgb(44, 15, 1);
+    float: left;
+    margin: auto;
+
+}
+.section2-overlay-content .a1{
+    margin-left: 35px;
+    margin-right: 5px;
+}
+.section2-overlay-content a i{
+    line-height: 30px;
+}
+.img1:hover .section2-overlay{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+/* ////////////////////////////////////////////////////////////////*/
+/* section3 */
+.section3-content{
+    margin: 10px 15px;
+    padding: 35px;
+}
+.section3-parent{
+    margin-left: 12% ;
+}
+
+.section3-title3{
+    margin-top: 20px;
+    color: black;
+
+}
+.section3-content-title{
+    margin: 10px 0;
+}
+.section3-paragraph{
+    color: rgb(148, 146, 146);
+}
+.btn3{
+    width:80px ;
+    color: white;
+    background-color:rgb(44, 15, 1) ;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+  
+}
+.section3-content:after{
+    position: absolute;
+    content: "";
+width: 0;
+height:0 ;
+top: 0;
+left: 0;
+background-color:rgb(0, 0, 0);
+opacity: 0;
+border-radius: 10px;
+}
+.section3-content:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    transition: 1s;
+
+}
+.section3-content:before{
+    position: absolute;
+    content: "";
+width: 0;
+height:0 ;
+bottom: 0;
+right: 0;
+background-color: black;
+opacity: 0;
+border-radius: 10px;
+}
+.section3-content:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    transition: 1s;
+
+}
+/* ///////////////////////////////////////////////////////////////////// */
+/* section4 */
+.section4{
+    background-color:  rgb(44, 15, 1);
+    overflow: auto;
+    padding-top: 30px;
+}
+.section4-line{
+    height: 2px;
+    width: 60px;
+    background-color: white;
+    border-radius: 1px;
+}
+.i4{
+    color: white;
+    margin-left: 30px;
+}
+.section4-words,.section4-right{
+    float: left;
+    margin-left: 30px;
+    
+}
+.section4-words{
+    color: rgb(255, 255, 255);
+    padding-top: 20px ;
+}
+.section4-words h2,.section4-words i,.section4-words p {
+    margin-top: 20px;
+}
+.section4-right{
+    margin-left: 700px;
+}
+.section4-img-img1{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    display: block;
+}
+
+ .section4-list {
+    list-style: none;
+    text-align: center;
+} 
+.section4-list li{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 15px 5px;
+    background-color: rgb(7, 5, 0);
+}
+.section4-list .first{
+    background-color:rgb(255, 255, 255) ;
+    margin-left: 15px;
+}
+.section4-list li:hover{
+    background-color: rgb(255, 255, 255);
+
+}
+.section5{
+    background-image: url(../img/cover.jpg);
+    position: relative;
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 150px;
+
+}
+.section5-container{
+    width: 80%;
+    margin: auto;
+
+}
+.section5-overlay,.section7-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+.section5-container-content{
+    overflow: hidden;
+    margin: auto;
+    padding-top: 150px;
+}
+.section5-content{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.section5-content i,.section5-content h3{
+    color: white;
+}
+.section6{
+margin-top: 70px;
+margin: auto;
+text-align: center;
+
+}
+.section6-container{
+    width: 80%;
+    overflow: hidden;
+    margin-left: 10%;
+    
+}
+.section6-container-content{
+    border: 2px solid rgb(44, 15, 1);
+    width: 30%;
+    float: left;
+    position: relative;
+
+}
+.section6-container .div2{
+    margin: 0 5%;
+}
+.section6-container-content img{
+    width: 120px;
+    height: 100px;
+    margin: 20px 0 20px 0;
+}
+.section6-container-content h3{
+    margin-bottom: 20px;
+    color: rgb(44, 15, 1);
+}
+.section6-container-content button{
+    
+    padding: 8px;
+    background-color: rgb(44, 15, 1);
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    margin-bottom: 20px;
+}
+.section6-container-content:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    top:0;
+    height: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+
+}
+.section6-container-content:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.6s;
+    
+}
+.section6-container-content p{
+    color: rgb(163, 159, 159);
+    margin: 20px 10px;
+    
+}
+.section6-container-content .price{
+    color: blue;
+    margin-bottom: 10px;
+}
+.section6-container-content del{
+    color:rgb(163, 159, 159);
+}
+
+.section6-container-content:hover .price{
+color: red;
+}
+.section7{
+    background-image: url(../img/Aesthetic\ photo\ ideas.jpg);
+    position: relative;
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 150px;
+}
+.section7-container{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 150px;
+    overflow: hidden;
+    color: white;
+}
+.section7-container-content{
+    width: 40%;
+    float: left;
+    overflow: hidden;
+}
+.section7-container-content img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+}
+.section7-container .right{
+    margin-left: 20%;
+}
+.section7-img{
+    margin:20px 10px;
+    float: left;
+}
+.section7-container .par{
+   width: 40%;
+   float: left;
+   
+}
+.section7-container .par2{
+    margin-left:20% ;
+}
+.section7-container span{
+    color:wheat;
+}
+.section8-container{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.section8-content-child{
+    float: left;
+    border: 1px solid rgb(44, 15, 1);
+    width: 30%;
+    padding: 20px 15px;
+    text-align: center;
+    position: relative;
+  
+}
+.center{
+    margin: 0 5%;
+   
+}
+
+.child-img{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.child-img img {
+    width: 100%;
+}
+.child-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0,0.7);
+    visibility: hidden;
+    opacity: 0;
+}
+.section8-content-child:hover .child-overlay{
+visibility: visible;
+opacity: 1;
+}
+.child-overlay a{
+width: 45px;
+height: 45px;
+background-color: white;
+color: rgb(44, 15, 1);
+display: block;
+margin-left: auto;
+
+
+}
+.child-overlay a i{
+    line-height: 45px;
+    position: absolute;
+z-index: 1;
+}
+.section8-content-child h2{
+font-size: 20px;
+color:rgb(44, 15, 1) ;
+margin: 10px 0;
+}
+.section8-content-child p{
+    color: rgb(182, 178, 176);
+}
+.section8-content-child:after{
+    position: absolute;
+    content: "";
+width: 100%;
+height:0 ;
+top: 0;
+left: 0;
+background-color:rgb(0, 0, 0);
+opacity: 0;
+
+}
+.section8-content-child:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    transition: 1s;
+}
+
+.section9-container{
+margin-top: 10px;
+}
+.section9-content{
+    width: 60%;
+    margin-left: 20%;
+    margin: auto;
+    overflow: hidden;
+ 
+}
+
+.section1-title{
+    text-align: center;
+}
+.section9-content-child{
+    width: 30%;
+    border: 1px solid rgb(44, 15, 1);
+    color: black;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+}
+.section9-content-child:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:black ;
+    opacity: 0;
+    visibility: hidden;
+    
+    
+}
+.section9-content-child:hover::after{
+    opacity: 0.3;
+    visibility: visible;
+    transition: 0.5s;
+    height: 100%;
+}
+.section9-content .div2{
+    margin: 0 5%;
+}
+.child9-img{
+    margin:10px 0 0 10px ;
+}
+.child9-img h6{
+    display: inline;
+    font-size: 15px;
+}
+.child9-img img{
+    border-radius: 50%;
+}
+.child9-info p{
+    color: rgb(168, 164, 164);
+    font-size: 12px;
+    
+  
+}
+.child9-info {
+    margin: 10px 8px;
+}
+.child9-info i{
+    color:rgb(44, 15, 1) ;
+    
+}
+.child9-info a{
+    text-decoration: none;
+    color: rgb(44, 15, 1) ;
+    margin-right: 2px;
+    font-size: 10px;
+}
+
+.section10-container{
+    background-color: rgb(44, 15, 1);
+    margin-top: 170px;
+    padding-bottom: 10px;
+    
+}
+.section10-content{
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+
+}
+.section10-img img{
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.section10-container-iqons{
+    margin:20px 0 ;
+    overflow: hidden;
+    width: 45%;
+    margin-left: 28%;
+    
+}
+.section10-container-iqons a{
+color: rgb(44, 15, 1);
+
+margin-bottom: 10px;
+
+}
+.section10-container-iqons i{
+    font-size: 30px;
+    margin-top: 50%;
+    transform: translate(0,-50%);
+   
+}
+.section10-container-iqons .i1{
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 20px;
+  
+}
+.section10-container-iqons .i2{
+margin:auto;
+}
+.section10-container-iqons .i1:hover{
+    opacity: 0.5;
+}
+.section10-container-p{
+    font-size: 15px;
+    margin: 10px 0 50px 0;
+}
